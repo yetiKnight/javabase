@@ -1,6 +1,7 @@
 package priv.captain.list;
 
-import static org.hamcrest.CoreMatchers.either;
+
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,19 +15,21 @@ import java.util.List;
  */
 public class ListDemo {
 
-	public static void main(String[] args) {
+	@Test
+	public void testList() {
 		
-		/**
+		/*
 		 * 1.底层基于数组的支持元素随机访问，其实现了标记接口RandomAccess，表示其支持随机访问。
 		 * 2.LinkedList基于链表，其实现了Deque队列。
 		 */
-		/**
-		 * 默认new空数组，第一放入时默认10，后续add都会检查是否超容量，若超容量执行grow(int minCapacity),
+		/*
+		 * 默认new空数组，，后第一放入时默认10续add都会检查是否超容量，若超容量执行grow(int minCapacity),
 		 * 扩容规则：int newCapacity = oldCapacity + (oldCapacity >> 1);
 		 */
 		List<String> arrayList = new ArrayList<>();
 		arrayList.add("666");
 		arrayList.add(2,"5555");
-		arrayList.forEach(e->{System.out.println(e);});
+		arrayList.forEach(System.out::println);
+
 	}
 }
