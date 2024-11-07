@@ -5,8 +5,8 @@ import org.junit.Test;
 import java.util.concurrent.*;
 
 /**
- * CountDownLatch: 闭锁的使用，用于多线程协作。
- * CyclicBarrier:可重复使用的栅栏。
+ * CountDownLatch: 闭锁的使用，用于多线程协作
+ * CyclicBarrier:可重复使用的栅栏
  * 目前发现：
  * CountDownLatch：主线程也会阻塞，直到CountDownLatch的线程执行完毕或超时。
  * CyclicBarrier：主线程不影响，会继续执行，只是CyclicBarrier的线程会相互等待。
