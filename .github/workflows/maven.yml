@@ -18,7 +18,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    env:
+      GITHUB_TOKEN: ${{ secrets.MY_PAT }}
     steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 11

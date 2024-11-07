@@ -11,9 +11,9 @@
 	</parent>
 	<groupId>priv.captain</groupId>
 	<artifactId>javabase</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>javabase</name>
-	<description>Demo project for Spring Boot</description>
+	<description>java基础学习</description>
 
 	<properties>
 		<java.version>11</java.version>
