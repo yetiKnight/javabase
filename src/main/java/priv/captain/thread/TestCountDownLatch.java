@@ -33,6 +33,7 @@ public class TestCountDownLatch {
 		   // 定义线程任务个数
 		   CountDownLatch latch = new CountDownLatch(3);
 		   ExecutorService pool = Executors.newFixedThreadPool(3);
+		   PriorityBlockingQueue que = new PriorityBlockingQueue();
 		   for (int i = 0; i < 3; i++) {
 			   pool.execute(() -> {
 				   try {
