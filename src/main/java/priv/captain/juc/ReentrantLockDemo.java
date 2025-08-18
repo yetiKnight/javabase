@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * 公平锁和非公平锁测试代码示例
  */
-public class ReentrantLock1 {
+public class ReentrantLockDemo {
 
     // 公平锁 严格按照等待时间的先后顺序取锁
     private static ReentrantLock gpLock = new ReentrantLock(true);

@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * 死锁模拟，灵活使用可中断锁：lock.lockInterruptibly();
  */
-public class InterruptibleLockExample {
+public class InterruptibleLockDemo {
     // 两把锁
     private static final ReentrantLock lock1 = new ReentrantLock();
     private static final ReentrantLock lock2 = new ReentrantLock();

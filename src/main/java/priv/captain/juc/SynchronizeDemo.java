@@ -8,7 +8,7 @@ import java.util.concurrent.Executors;
  * @author: yetiKnight
  * @since: 2024-11-22
  **/
-public class SynchronizeExample {
+public class SynchronizeDemo {
 
 
     // 实例锁
@@ -29,7 +29,7 @@ public class SynchronizeExample {
 
     // 类锁
     public void func3() {
-        synchronized (SynchronizeExample.class) {
+        synchronized (SynchronizeDemo.class) {
             for (int i = 0; i < 10; i++) {
                 System.out.print(i + " ");
             }
@@ -45,8 +45,8 @@ public static void main(String[] args) {
     final ExecutorService executorService = Executors.newFixedThreadPool(2);
 
     // 创建两个SynchronizeExample的实例
-    SynchronizeExample example1 = new SynchronizeExample();
-    SynchronizeExample example2 = new SynchronizeExample();
+    SynchronizeDemo example1 = new SynchronizeDemo();
+    SynchronizeDemo example2 = new SynchronizeDemo();
 
     // 使用线程池执行两个实例的func1方法
     executorService.execute(example1::func1);
