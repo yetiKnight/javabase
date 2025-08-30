@@ -3,7 +3,7 @@ package priv.captain.spi;
 import java.util.List;
 
 /**
- * @description: 普通数据库搜索实现
+ * @description: 普通数据库搜索实现，实际情况通常是放jar里引入
  * @author: yetiKnight
  * @since: 2024-11-12
  **/

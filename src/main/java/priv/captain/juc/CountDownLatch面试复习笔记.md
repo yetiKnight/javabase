@@ -1,5 +1,3 @@
-好的，让我们开始复习 `CountDownLatch`。
-
 📘 Java 面试复习笔记：CountDownLatch
 
 ✅ 一、概念简介
