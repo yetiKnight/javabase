@@ -28,7 +28,7 @@ public class PermissionAspect {
         String permissionValue = permissionCheck.value();
 
         // 这里使用RuntimeException，否则可能事务不回滚。
-        if (!hashPermission(permissionValue)) {
+            if (!hashPermission(permissionValue)) {
             throw new PermissionDeniedException("权限不足");
         }
 

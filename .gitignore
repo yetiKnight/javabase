@@ -1,16 +1,12 @@
-# Compiled class file
+# ===========================================
+# Java 全栈项目通用 .gitignore 文件
+# 适用于：Spring Boot、微服务、前端、移动端、桌面应用等
+# ===========================================
+
+# ===========================================
+# 编译产物
+# ===========================================
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
 *.nar
@@ -18,56 +14,456 @@
 *.zip
 *.tar.gz
 *.rar
+*.7z
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-<<<<<<< HEAD
-replay_pid*
-=======
-# maven ignore
+# 前端构建产物
+dist/
+build/
+out/
+.next/
+.nuxt/
+.vuepress/dist/
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+
+# Maven 构建产物
 target/
-*.jar
-!.mvn/wrapper/*
-*.war
-*.zip
-*.tar
-*.tar.gz
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
 .flattened-pom.xml
 
-# eclipse ignore
+# Gradle 构建产物
+build/
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# ===========================================
+# IDE 配置文件
+# ===========================================
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+.idea_modules/
+atlassian-ide-plugin.xml
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Eclipse
 .settings/
 .project
 .classpath
-
-# idea ignore
-.idea/
-*.ipr
-*.iml
-*.iws
-
-# visual-studio-code ignore
-.vscode/
-
-# temp ignore
-*.log
-*.cache
-*.diff
-*.patch
+.metadata/
+bin/
+tmp/
 *.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.recommenders
+.factorypath
 
-# system ignore
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ===========================================
+# 日志文件
+# ===========================================
+*.log
+*.log.*
+logs/
+log/
+
+# 应用日志
+application.log
+application-*.log
+spring.log
+spring-*.log
+
+# ===========================================
+# 运行时文件
+# ===========================================
+
+# JVM 崩溃日志
+hs_err_pid*
+replay_pid*
+
+# 临时文件
+*.tmp
+*.temp
+*.cache
+*.pid
+*.seed
+*.pid.lock
+
+# ===========================================
+# 操作系统文件
+# ===========================================
+
+# macOS
 .DS_Store
-Thumbs.db
-*.orig
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
-# license check result
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===========================================
+# 数据库文件
+# ===========================================
+*.db
+*.sqlite
+*.sqlite3
+*.h2.db
+*.mv.db
+*.trace.db
+
+# ===========================================
+# 配置文件（敏感信息）
+# ===========================================
+
+# 环境配置文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 密钥文件
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
+*.truststore
+
+# 配置文件（包含敏感信息）
+application-local.yml
+application-local.yaml
+application-local.properties
+application-secret.yml
+application-secret.yaml
+application-secret.properties
+
+# ===========================================
+# 测试和覆盖率报告
+# ===========================================
+coverage/
+*.lcov
+.nyc_output
+junit.xml
+test-results/
+test-output/
+surefire-reports/
+failsafe-reports/
+
+# ===========================================
+# 依赖管理
+# ===========================================
+
+# Maven
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# PHP
+vendor/
+composer.lock
+
+# Ruby
+.bundle/
+vendor/bundle/
+
+# Go
+vendor/
+go.sum
+
+# ===========================================
+# 容器化相关
+# ===========================================
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+.docker/
+
+# Kubernetes
+*.kubeconfig
+kubeconfig
+
+# ===========================================
+# 监控和指标
+# ===========================================
+prometheus_data/
+grafana_data/
+jaeger_data/
+zipkin_data/
+
+# ===========================================
+# 消息队列
+# ===========================================
+rabbitmq_data/
+kafka_data/
+
+# ===========================================
+# 缓存
+# ===========================================
+redis_data/
+memcached_data/
+
+# ===========================================
+# 文档生成
+# ===========================================
+docs/_build/
+site/
+_site/
+
+# ===========================================
+# 其他
+# ===========================================
+
+# 备份文件
+*.bak
+*.backup
+*.orig
+*.rej
+*.swp
+*.swo
+*~
+
+# 补丁文件
+*.patch
+*.diff
+
+# 许可证检查结果
 license-list
 
-# grpc compiler
-compiler/gradle.properties
-compiler/build/*
-compiler/.gradle/*
+# 协议缓冲区编译产物
+*.pb.go
+*.pb.java
+*.pb.py
+*.pb.cc
+*.pb.h
 
-# protobuf
-dubbo-serialization/dubbo-serialization-protobuf/build/*
->>>>>>> c12f09d (初始化)
+# gRPC 编译产物
+compiler/gradle.properties
+compiler/build/
+compiler/.gradle/
+
+# 分片上传临时文件
+upload-temp/
+chunk-temp/
+
+# 性能分析文件
+*.hprof
+*.jfr
+
+# 安全扫描结果
+security-scan-results/
+vulnerability-report/
+
+# 代码质量报告
+sonar-project.properties
+.sonar/
+sonar-reports/
+
+# 依赖漏洞扫描
+dependency-check-report.html
+dependency-check-report.json
+
+# ===========================================
+# 前端框架特定
+# ===========================================
+
+# React
+.eslintcache
+*.tsbuildinfo
+
+# Vue
+.DS_Store
+node_modules
+/dist
+
+# Angular
+/.angular/cache
+.angular/
+
+# Svelte
+.DS_Store
+node_modules
+/build
+
+# ===========================================
+# 移动端开发
+# ===========================================
+
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+local.properties
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.jks
+*.keystore
+!debug.keystore
+
+# iOS
+*.ipa
+*.dSYM.zip
+*.dSYM
+DerivedData/
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+ios/.xcode.env.local
+
+# Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+flutter_*.png
+linked_*.ds
+unlinked.ds
+unlinked_spec.ds
+
+# ===========================================
+# 桌面应用开发
+# ===========================================
+
+# Electron
+dist_electron/
+out/
+
+# JavaFX
+*.fxml.bak
+
+# Swing
+*.form
+
+# ===========================================
+# 项目特定忽略
+# ===========================================
+
+# 本地开发配置文件
+local.properties
+dev.properties
+
+# 测试数据
+test-data/
+sample-data/
+
+# 临时上传文件
+uploads/temp/
+temp-uploads/
+
+# 本地数据库
+local-db/
+
+# 临时文件
+temp/
+tmp/

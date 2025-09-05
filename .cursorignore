@@ -1,0 +1,303 @@
+# ===========================================
+# Cursor IDE 索引忽略文件 - Java全栈通用
+# 优化 Cursor 的代码索引和搜索性能
+# 适用于：Spring Boot、微服务、前端、移动端、桌面应用等
+# ===========================================
+
+# ===========================================
+# 构建产物和编译文件
+# ===========================================
+target/
+build/
+out/
+dist/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+
+# 前端构建产物
+.next/
+.nuxt/
+.vuepress/dist/
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+
+# ===========================================
+# 依赖和库文件
+# ===========================================
+node_modules/
+.m2/repository/
+.gradle/caches/
+.gradle/wrapper/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# PHP
+vendor/
+
+# Ruby
+.bundle/
+vendor/bundle/
+
+# Go
+vendor/
+
+# ===========================================
+# IDE 配置文件
+# ===========================================
+.idea/
+.vscode/
+.settings/
+.project
+.classpath
+*.iml
+*.ipr
+*.iws
+
+# ===========================================
+# 日志文件
+# ===========================================
+*.log
+logs/
+log/
+application*.log
+spring*.log
+
+# ===========================================
+# 数据库和缓存文件
+# ===========================================
+*.db
+*.sqlite
+*.sqlite3
+*.h2.db
+*.mv.db
+*.trace.db
+redis_data/
+memcached_data/
+
+# ===========================================
+# 容器化数据目录
+# ===========================================
+prometheus_data/
+grafana_data/
+jaeger_data/
+zipkin_data/
+rabbitmq_data/
+kafka_data/
+
+# ===========================================
+# 临时文件和缓存
+# ===========================================
+*.tmp
+*.temp
+*.cache
+*.pid
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ===========================================
+# 大型二进制文件
+# ===========================================
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.exe
+*.dll
+*.so
+*.dylib
+
+# ===========================================
+# 媒体文件
+# ===========================================
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.ico
+*.svg
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.mp3
+*.wav
+*.flac
+
+# ===========================================
+# 文档和说明文件（可选）
+# ===========================================
+# 如果不需要索引文档文件，可以取消注释
+# *.md
+# *.txt
+# *.pdf
+# *.doc
+# *.docx
+
+# ===========================================
+# 测试报告和覆盖率
+# ===========================================
+coverage/
+test-results/
+test-output/
+surefire-reports/
+failsafe-reports/
+*.lcov
+.nyc_output
+
+# ===========================================
+# 安全扫描和代码质量报告
+# ===========================================
+security-scan-results/
+vulnerability-report/
+sonar-reports/
+.sonar/
+dependency-check-report.*
+
+# ===========================================
+# 环境配置文件（敏感信息）
+# ===========================================
+.env*
+application-local.*
+application-secret.*
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
+*.truststore
+
+# ===========================================
+# 上传和临时文件
+# ===========================================
+uploads/
+temp-uploads/
+upload-temp/
+chunk-temp/
+
+# ===========================================
+# 性能分析文件
+# ===========================================
+*.hprof
+*.jfr
+
+# ===========================================
+# 协议缓冲区生成的文件
+# ===========================================
+*.pb.go
+*.pb.java
+*.pb.py
+*.pb.cc
+*.pb.h
+
+# ===========================================
+# 前端框架特定
+# ===========================================
+
+# React
+.eslintcache
+*.tsbuildinfo
+
+# Vue
+.DS_Store
+node_modules
+/dist
+
+# Angular
+/.angular/cache
+.angular/
+
+# Svelte
+.DS_Store
+node_modules
+/build
+
+# ===========================================
+# 移动端开发
+# ===========================================
+
+# Android
+*.apk
+*.aab
+*.dex
+captures/
+.externalNativeBuild/
+.cxx/
+*.jks
+*.keystore
+
+# iOS
+*.ipa
+*.dSYM.zip
+*.dSYM
+DerivedData/
+*.hmap
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+*.moved-aside
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xccheckout
+ios/.xcode.env.local
+
+# Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+flutter_*.png
+linked_*.ds
+unlinked.ds
+unlinked_spec.ds
+
+# ===========================================
+# 桌面应用开发
+# ===========================================
+
+# Electron
+dist_electron/
+out/
+
+# JavaFX
+*.fxml.bak
+
+# Swing
+*.form
+
+# ===========================================
+# 项目特定忽略
+# ===========================================
+
+# 如果项目中有大量生成的代码，可以添加
+# generated/
+# src/generated/
+
+# 如果不需要索引测试文件，可以取消注释
+# src/test/
+
+# 如果不需要索引资源文件，可以取消注释
+# src/main/resources/static/
+# src/main/resources/templates/
